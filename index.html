@@ -1,9 +1,318 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf8">
+    <meta charset="UTF-8">
+    <title>Parallax-Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-hello
+
+    <div id="loading">
+        <div class="mask">
+            <img src="img/logo.gif" alt="">
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <img src="img/logo.gif" alt="">
+            </div>
+            <nav>
+                <ul class="list">
+                    <li><a href="#">プロジェクトの概要</a></li>
+                    <li><a class="sub" href="#">研究の内容</a></li>
+                    <li><a href="#">プロジェクトの組織</a></li>
+                </ul>
+                
+            </nav>
+            
+        </div>
+
+        <div class="submenu">
+            <ul>
+                <li><a href="#">仮想都市空間システム</a></li>
+                <li><a href="#">都市での危機管理</a></li>
+                <li><a href="#">地下鉄京都駅での避難誘導</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="space" id="top">
+        <div class="wrapper">
+            <video src="video/V4ShijoMeet_x4.mp4" autoplay muted loop playsinline disablepictureinpicture></video>
+            <h1>Universal Design Of Digital City</h1>
+        </div>
+    </div>
+
+    <div class="separate wt">
+        <h1>プロジェクトの概要</h1>
+    </div>
+
+    <div class="separate">
+        <video class="js-parallax" src="video/control4_x4.mp4" autoplay muted loop playsinline disablepictureinpicture
+            data-y="-20vw">
+    </div>
+
+    <div class="content">
+        <div class="item">
+            <div class="title js-parallax" data-y="-10vw">
+                <span>研究の目的</span>
+            </div>
+            <div class="text js-parallax" data-y="-5vw">
+                <span>インターネットがビジネスと同様に生活にも使われて始めています．ビジネスは均質で論理的な情報空間を求めますが,
+                    生活は地域の文化的特性を反映した非均質で感性豊かな情報空間を求めます.<br>
+                    例えば，高血圧に苦しむ人たちにとって必要なのは, 世界規模のネットワークではなく，会おうと思えば会える距離に住む人たちの生活情報空間です.<br>
+                    デジタルシティは新しいメディアを用いて地域の情報を集積し, 地域コミュニティのネットワークに情報基盤を提供するものです.<br>
+                    このプロジェクトの目的は，「デジタルシティを健常者，高齢者，障害者を含め万人が利用・参加できるものにすること」です．
+                    ところが，高齢者, 障害者専用のシステムを開発するのはコストがかかり, 結局それは高齢者, 障害者の負担となります. 生活情報空間を万人のものとするためには,
+                    最初から誰もが使いやすいよう設計すること（ユニバーサルデザイン）が必要です.<br>
+                    本プロジェクトでは，「情報発信」「情報受信」「参加」を対象に，デジタルシティのユニバーサルデザインのための基礎技術の開発を目標とします．</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="separate">
+        <video class="js-parallax" src="video/20030913DV-touch2_x4.mp4" autoplay muted loop playsinline
+            disablepictureinpicture data-y="-20vw">
+    </div>
+
+    <div class="content">
+        <div class="item rev">
+            <div class="title js-parallax" data-y="-10vw">
+                <span>研究の内容</span>
+            </div>
+            <div class="text js-parallax" data-y="-5vw">
+                <span>デジタルシティには現在，地理情報システム, 仮想空間,
+                    モバイルコンピューティングなどの技術が利用されています．ここでは基礎研究として,「知覚情報基盤」と呼ぶ情報インフラと，そこで活動する「社会的エージェント」と呼ぶソフトウェアの研究を行います．<br>
+                    知覚情報基盤の研究では，全方位視覚ネットワークを開発し，環境の静的構造と人々の動的な行動の意味構造をモデル化し，能動的に情報を蓄積する研究を進めます．このために，大量の時系列データを記録・検索する技術を確立します．<br>
+                    社会的エージェントの研究では，エージェントの動作環境（仮想空間，携帯端末を含む）を開発し，エージェントの発話や行為の社会的効果を解明し，エージェントがどのような社会的役割を持ちうるかを明らかにします．<br>
+                    メディア表現の適応的選択技術の研究が，知覚情報基盤による情報蓄積と社会的エージェントによる情報活用をつなぎます．まず，都市の多様なメディア表現と人々の解釈の関係を明らかにします．次に，蓄積された情報を，利用者の知識や感性などに応じて変換し提示する技術を確立します．<br>
+                    基礎研究の成果は，セキュリティ，環境体験学習，危機管理などに適用し，京都を始めとする現実の都市を舞台に実証実験を展開します．例えば環境体験学習では，都市緑地を対象に仮想自然空間を構築し疑似体験と実体験の連携を可能にします．社会的エージェントによる問題意識の喚起や学習支援，体験学習による成果の仮想自然空間へのフィードバックが重要な課題です．</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="separate wt">
+        <h1>仮想都市空間システム</h1>
+    </div>
+
+    <div class="content">
+        <div class="fadeups">
+            <span class="fadeup">
+                <p>普段行われる避難訓練には，１）多勢が集まる必要がある，２）公共空間など実施が困難な場所がある，３）実際の避難現場は危険だが避難訓練は安全でなければならない，４）事前に定められた手順を追うだけで意志決定の訓練にはならない，などの問題がある．<br>仮想空間はこれらの解決に有効な，１）自宅から参加可能，２）環境を低コストで準備可能，３）危険な状況を安全に体験可能，４）ゲーミング手法を適用可能，などの利点を持つ．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>仮想空間における訓練は，乗り物の運転など個人タスクにおいては実用化されているが，避難訓練のような集団タスクにはあまり適用されていない．<br>個人タスクの場合は物理シミュレーションにユーザの入力を反映させる仕組みがあれば良いが，集団タスクの場合はこれに加えて集団行動シミュレーションにユーザが参加する仕組みが必要となる．<br>既存の群集シミュレーションは分析を目的としているため社会的インタラクションを物理法則で近似することが多く，ユーザ参加は考慮されていない．ユーザ参加を可能にするには，アバターと同じように反応し意思決定を行う社会的なエージェントが必要となる．<br>そこで，社会的エージェントとユーザの間のインタラクションプロトコルをシナリオとして記述する言語Qと，記述されたインタラクションシナリオを実行するプラットフォームFreeWalkからなる仮想都市空間システムFreeWalk/Qを開発した．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>仮想訓練に社会的エージェントを用いる既存システムではユーザとエージェントの能力に差があるためユーザ・エージェント各々の役割を相互に交換できない．<br>そのようなアーキテクチャを大規模群集に適用すると，システムが複雑化する，参加人数の変動に対応できない，シミュレーションのテストにユーザが必要となる，などの問題が生じる．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>FreeWalkではユーザとエージェントの区別を無くすために，歩く・話すといった外界への作用や，見る・聞くといった外界の知覚を仮想空間内で実行するモジュールを，APIおよびUIから同様に呼び出し可能にした．<br>ユーザはUIを操作して，エージェントはAPIから制御されて，仮想空間の中で群集シミュレーションを共有する（図１）．この共有は，以下のようにAPIとUI
+                    の連結方法を工夫して実現した．</p>
+            </span>
+            <span class="fadeup ct">
+                <div class="ctimg">
+
+                    <img src="img/toshi1.jpg" alt="">
+                </div>
+                <p>図１．避難群集シミュレーション</p>
+            </span>
+            <span class="fadeup">
+                <p>歩行：UIでは移動方向を入力するが，APIでは目的座標を指定する．この違いをAPIの中で吸収し，移動方向から次の一歩を生成する共通の歩行モジュールを組み込んだ．</p>
+            </span>
+            <span class="fadeup">
+                <p>対話：ユーザは音声で話し，エージェントはテキストで話す．そこで，エージェントとユーザが入り混じった集団の対話を効率良く扱うために，UI間では音声通信，API間ではテキスト通信，UI-API間では音声合成認識エンジンを用いる対話モジュールを設計した．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>ジェスチャー：抽象度の低いUI用モジュールと，それらのモジュールを呼び出す抽象的なAPI用モジュールを実装し，階層的なインタフェースを構築した．</p>
+            </span>
+            <span class="fadeup">
+                <p>エージェントの知的振る舞いは，その内部モデルを高度に作り上げることで達成しようとするのが一般的である．<br>しかしながら，集団全体を知的に振る舞わせるには，各エージェントが自分の役割に従って行動する能力，すなわち外部モデルを設計する必要がある．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>Qはエージェントの内部モデルを気にすることなく,エージェント間のプロトコルを記述できる言語である．<br>拡張有限状態機械を記述モデルとしており，状態が場面に，入力が知覚に，出力が作用に対応する．これにより，「場面Aで現象Bを観察したらCを行え」といった各状況における特定の行動ルールの蓄積であるインタラクションシナリオによって役割ごとの振る舞いを定義できる．<br>図２に示すインタラクションパターンカードは，応用分野特有の行動パターン（表）と各応用で異なるパラメータ（値）にシナリオを分離することで，記述を効率的かつ容易にする．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>FreeWalkエージェントはインタラクションシナリオに従って行動する（図１）．<br>「?」から始まるのは知覚コマンドであり，「!」から始まるのは作用コマンドである．各コマンドがQ処理系によって解釈されると，対応するAPIが呼び出される．<br>処理系はイベント駆動型であり，各場面（scene）にある知覚コマンド群を並行観測可能である．
+                </p>
+            </span>
+            <span class="fadeup ct">
+                <div class="ctimg">
+
+                    <img src="img/toshi2.jpg" alt="">
+                </div>
+                <p>図２．インタラクションパターンカード</p>
+            </span>
+            <span class="fadeup">
+                <p>文献：</p>
+            </span>
+            <span class="fadeup">
+                <p>Hideyuki Nakanishi and Toru Ishida. FreeWalk/Q: Social Interaction Platform in Virtual Space. ACM
+                    Symposium on Virtual Reality Software and Technology (VRST2004), 2004.</p>
+            </span>
+        </div>
+    </div>
+
+    <div class="separate wt">
+        <h1>都市での危機管理</h1>
+    </div>
+
+    <div class="content">
+        <div class="fadeups">
+            <span class="fadeup">
+                <p>京都駅のような公共施設における危機管理は市民にとって重要だが，市民に参加の機会は提供されていない．例えば，学校やオフィスのように施設の利用者が集まって避難訓練を実施するということはできない．<br>そこで市民参加による危機管理に向けて，京都駅という物理的な公共空間に対応するデジタルな公共空間を仮想都市空間システムによって構築し，避難訓練を行うためのシミュレーションを開発した．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>避難シミュレーションを妥当なものとするには，群集エージェントの行動ルールをどう設計するかが課題となる．我々は，現実空間で行われた避難行動の実験結果を仮想空間で再現できるように行動ルールを設計した．<br>この実験は，左右に仕切られた部屋の左側に集まっている16名の避難者を4名の誘導者が右側にある正しい出口まで誘導するというものである．左側の出口は間違いであり，誘導者はここから避難者が出るのを防がなければならない．<br>最初に我々は，誘導者の指示に気付いた場合はそれに従い，それまでは自分の判断で行動するようルールを設計した．そうしたシミュレーションの結果は実験結果と食い違うものであった．そこで，誘導者の指示に気付くまでの間，自分で行動するのではなく他人の行動をまねるように行動ルールを書き変えた．そうすると，実験結果とほぼ一致するシミュレーション結果が得られた．
+                </p>
+            </span>
+            <span class="fadeup ct">
+                <div class="ctimg">
+                    <ul class="imglist">
+                        <!-- <li class="lid"><img src="img/kiki1.jpg" alt=""></li> -->
+                        <li class="lid"><img src="img/kiki1-2.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <p>図１．避難シミュレーション</p>
+            </span>
+            <span class="fadeup">
+                <p>こうして設計した避難シミュレーションの教育効果を分析するために，避難の様子を上から眺める超越型の観察と，仮想空間内で避難する内在型の体験（図１）を比較した．<br>被験者を，超越型のみのグループ，内在型のみのグループ，併用するグループに分け，内在型体験の教育効果を観測した．併用するグループはさらに，超越型を先に見るグループと内在型を先に体験するグループに分け，順番の違いが及ぼす影響を調べた．<br>その結果，超越型を見た後に内在型を体験する場合の教育効果が一番高く，誘導者の振舞いや避難現場の状況に関する小テストにおいて最も高い得点を出した．次に良かったのが，超越型のみの場合と内在型を体験した後に超越型を見る場合であった．内在型のみの場合は得点が最も低かった．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>現実にもとづいた行動ルールの構築に向けて，群集歩行を記録するシステムを京都駅に導入した．<br>図２(a)の黒丸で示すとおり，コンコースに12台，ホームに16台，図２(c)に示す広角撮影用の反射鏡を備えた視覚センサを設置した．図２(b)は設置状況である．<br>これにより，乗降口と改札口の間の人間の流れを記録できるセンサネットワークを構築した．カメラ映像（図２(d)）から人の位置を取得して仮想空間に可視化することができる（図２(e)）．<br>周囲の環境（柱の存在や，階段など）による人の流れ，すなわち動線の合流・分岐や，人間同士の回避行動の動線への影響を分析可能である．
+                </p>
+            </span>
+            <span class="fadeup ct">
+                <div class="ctimg">
+
+                    <img src="img/kiki2.jpg" alt="">
+                </div>
+                <p>図２．京都駅の避難誘導システム</p>
+            </span>
+            <span class="fadeup">
+                <p>避難シミュレータを災害発生前の防災教育ツールとしてだけでなく，災害発生時の救援システムとしても利用できるよう，センサネットワークと組み合わせて避難誘導システムを開発した．<br>これは，遠隔から特定の集団だけに指示できるシステムであり，複数集団に分割して誘導することによって，1か所の出口に全員が殺到するのを避けることができる．<br>図２(f)に示すように，画面には上方から見た京都駅が描かれ，群集の行動を把握できる．集団を選択すると，該当者の携帯電話にシステムが電話をかけ音声接続が確立する．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>文献：</p>
+            </span>
+            <span class="fadeup">
+                <p>Yohei Murakami, Toru Ishida, Tomoyuki Kawasoe and Reiko Hishiyama. Scenario Description for
+                    Multi-Agent Simulation. International Joint Conference on Autonomous Agents and Multiagent Systems
+                    (AAMAS2003), pp.369-376, 2003.</p>
+            </span>
+            <span class="fadeup">
+                <p>Hideyuki Nakanishi, Satoshi Koizumi, Toru Ishida and Hideaki Ito. Transcendent Communication:
+                    Location-Based Guidance for Large-Scale Public Spaces. International Conference on Human Factors in
+                    Computing Systems (CHI2004), pp.655-662, 2004.</p>
+            </span>
+        </div>
+    </div>
+
+    <div class="separate wt">
+        <h1>地下鉄京都駅での避難誘導</h1>
+    </div>
+
+    <div class="content">
+        <div class="fadeups">
+            <span class="fadeup">
+                <p>駅などの多勢が利用する公共空間における避難誘導は，放送設備と現地の係員によって行われる．放送設備が全体的な誘導を提供する一方，現地の係員は局所的な誘導を提供する．<br>放送設備は遠隔から多勢の人間に指示できる利便性の高い誘導手段であるが，その場の状況に特化した局所的な指示を与えるのには向いていない．そこで我々は，「遠隔から多勢の人間に局所的な指示を与える」新しいコミュニケーション様式として「超越型コミュニケーション」を考案した．<br>これは，超越的に多勢の人間がいる空間全体を眺めつつ対話相手を選択する様式である．そして，この様式による避難誘導，すなわち超越型誘導を可能にするシステムを開発した．<br>このシステムの特徴は，携帯電話と仮想都市を用いている点である．放送設備と異なり，携帯電話は局所的な個別のコミュニケーションを可能にする．また，監視カメラ映像と異なり，現地の様子がリアルタイムでシミュレートされる仮想都市は任意の視界を映し出すことで指示対象の特定を容易にする．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>超越型誘導には避難群集のいる空間を遠隔の指令室などから一望でき，この視界を通して局所的指示を与える対象を直接的に選択できるシステムが必要となる．この条件を満たすようにFreeWalkを拡張して超越型誘導システムを開発した．<br>図1は，超越型誘導システムを使用して地下鉄のプラットフォームにいる人々に指示を与えている様子である．大型タッチスクリーンの前に立っているのは超越的参加者である誘導者である．駅の指令室にいる係員などを想定している．<br>大型スクリーンにはFreeWalkが描画する仮想的なプラットフォーム空間が表示されている．そして，その仮想都市空間の中で多数の人体モデルが歩いている．これらの人体モデルは実際にプラットフォームにいる人々のコンテキスト情報を反映している．このように誘導者は現実空間の状況を把握できる．
+            </span>
+            <span class="fadeup ct">
+                <div class="ctimg">
+
+                    <img src="img/chika1.jpg" alt="">
+                </div>
+                <p>図１．超越型誘導システム</p>
+            </span>
+            <span class="fadeup">
+                <p>図1で誘導者は人体モデルを指差している．指差しをタッチスクリーンが検知すると誘導者のマイクが人体モデルに該当する避難者の携帯電話とつながるようになっている．携帯電話とFreeWalkの接続には音声応答ボードを用いている．人体モデルと電話番号の対応は，無線ICタグや光学マーカなどによってあらかじめ分かっているものとする．<br>このような直接的な指示対象の選択が画面に映し出される仮想都市空間上で行え，誘導者のマイクを任意の避難群集の携帯電話と同時につなぐことが可能になっている．
+                </p>
+            </span>
+            <span class="fadeup">
+                <p>我々は超越型誘導システムを京都駅に設置した．設置のためにまず京都駅の3Dモデルを，図面から起こした単純な幾何モデルにデジタルカメラで撮影した写真を貼りつけて作成した．<br>この方法によって作成コストを低く抑えることができ，同時に衝突判定の計算コストも低く抑えることができた．
+                    の連結方法を工夫して実現した．</p>
+            </span>
+            <span class="fadeup">
+                <p>次に，京都駅に視覚センサーネットワークを配備してFreeWalkを接続し，コンテキスト情報の取得を可能にした．<br>この視覚センサーは図2(a)
+                    のとおり，CCDカメラと特殊な形状の反射鏡から構成されている．この反射鏡は，公共空間全体を視覚センサーによって安価に覆うのに有効な役割を果たしている．一つのカメラの画角を広げれば，少ない数のカメラで公共空間全体を覆うことができる．しかし，通常のカメラで画角を広げると画像が歪曲してしまう．<br>我々の視覚センサーは特殊な反射鏡を備えることで，図2(b)
+                    に示すように，この歪みを回避している．具体的には，カメラの光軸に直交する平面を透視投影で撮影できるよう反射鏡が設計されている．図2(c)
+                    は，<br>図2(b)の画像から背景差分等の手法を用いて群集の位置を検出し，FreeWalk上に可視化した結果である．京都駅のような屋内の公共空間ではGPS
+                    が使用できないため，視覚センサーのような何らかの代替手段が必要となる．</p>
+            </span>
+            <span class="fadeup ct">
+                <div class="ctimg">
+
+                    <img src="img/chika2.jpg" alt="">
+                </div>
+                <p>図２．視覚センサーによるコンテキスト情報の取得</p>
+            </span>
+            <span class="fadeup">
+                <p>文献：</p>
+            </span>
+            <span class="fadeup">
+                <p>Hideyuki Nakanishi, Satoshi Koizumi, Toru Ishida and Hideaki Ito. Transcendent Communication:
+                    Location-Based Guidance for Large-Scale Public Spaces. International Conference on Human Factors in
+                    Computing Systems (CHI2004), pp. 655-662, 2004.</p>
+            </span>\para.html
+        </div>
+    </div>
+
+    <div class="separate">
+        <video class="js-parallax" src="video/snag-0005nijo_almost_x4.mp4" autoplay muted loop playsinline
+            disablepictureinpicture data-y="-20vw">
+    </div>
+
+    <div class="content">
+        <div class="item">
+            <div class="title js-parallax" data-y="-10vw">
+                <span>プロジェクトの組織</span>
+            </div>
+            <div class="text js-parallax" data-y="-5vw">
+                <span>このプロジェクトは，独立行政法人 科学技術振興機構 戦略的創造研究推進事業（CREST）の研究領域「高度メディア社会の生活情報技術」（領域リーダー：長尾
+                    眞）の研究プロジェクト「デジタルシティのユニバーサルデザイン」（プロジェクトリーダー：石田 亨）として，平成12年度から5年間の予定で行うものです．<br>
+                    科学技術振興機構デジタルシティ研究センター（京都市二条河原町）を中心に，京都大学情報学研究科，大阪大学工学研究科，NTTコミュニケーション科学基礎研究所，京都高度技術研究所が協力して進めています．<br>
+                    国内の連携としては，京都大学建築学研究科，デジタルシティ京都・実験フォーラムなどと，海外との連携としては，スタンフォード大学，カリフォルニア大学，パリ第六大学，上海交通大学などと協力していきます．<a
+                        href="">(組織図へ）</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="space end">
+        科学技術振興機構 (JST)<br>
+        戦略的創造研究推進事業 (CREST)<br>
+        デジタルシティのユニバーサルデザイン
+    </div>
+
+    <section class="topbt">
+        <a href="#top">PAGE TOP</a>
+    </section>
+
+    <script src='https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js'></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

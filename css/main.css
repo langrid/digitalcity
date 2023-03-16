@@ -1,0 +1,294 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #1d1d1d;
+  font-size: 1.6rem;
+  background-color: #1d1d1d;
+
+}
+
+span {
+  margin: 10px;
+  color: black;
+  text-align: justify;
+  line-height: 2;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.header {
+  position: relative;
+  background-color: #eee;
+  z-index: 100;
+}
+
+.header__logo {
+  right: 10%;
+}
+
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 96%;
+  max-width: 1380px;
+  margin:0 auto;
+  padding-top: 2rem;
+
+}
+
+.list {
+  display: flex;
+  background-color: #eee;
+
+}
+
+.list li:nth-child(even){
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.list li a {
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+}
+
+.list li a:hover {
+  color: #9b9b9b;
+}
+
+.submenu{
+  display: none;
+  height: 60px;
+  background-color: #ececec;
+}
+
+.submenu ul{
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0px;
+  padding: 0px,0px,0px,15px;
+}
+
+.submenu ul li{
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  align-items: center;
+}
+
+.space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+}
+
+.end {
+  height: 50vh;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper video {
+  filter: brightness(40%);
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.wrapper h1 {
+  font-size: 3em;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.separate {
+  overflow: hidden;
+  height: 30vw;
+}
+
+.separate video {
+  filter: brightness(80%);
+}
+
+.wt {
+  background-color: #eee;
+  height: 20vw
+}
+
+.wt h1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.separate video {
+  width: 100%;
+}
+
+.content {
+  padding: 10vw 10% 5vw;
+  background: #fff;
+}
+
+.item {
+  display: flex;
+  flex-wrap: nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.rev {
+  flex-direction: row-reverse;
+}
+
+.item .title {
+  width: 35%;
+  max-height: 300px;
+  height: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  background: rgba(238, 238, 238, 0.5);
+  border-radius: 8px;
+}
+
+.item .text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 5%;
+  background: rgba(238, 238, 238, 0.5);
+  border-radius: 8px;
+}
+
+
+.fadeups {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.fadeup {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.fadeup span {
+  margin-top: 20px;
+}
+
+.topbt {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  z-index: 9999;
+}
+
+.topbt a {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.topbt:hover {
+  opacity: 0.85;
+}
+
+.ct {
+  text-align: center;
+  justify-content: center;
+}
+
+.ctimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imglist {
+  display: flex;
+  justify-content: center;
+}
+
+.lid {
+  margin-left: 5px;
+  margin-right: 5px;
+  list-style: none;
+}
